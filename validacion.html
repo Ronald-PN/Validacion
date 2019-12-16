@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validacion</title>
+    
+    <link rel="stylesheet" href="flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+   
+</head>
+
+<body>
+    <div class="container">
+     <header class="row center-xs">
+     <div class="col-xs-8">
+         <div class="header">
+    <h3>Formulario para validar</h3>
+    <br>
+</div>
+    </div>
+</header>
+
+    <div class="row center-xs">
+            <div class="col-xs-2 ">
+                    <div class="sidebar2">
+                        <h3>Programa para validar datos utilizando flexboxgrid</h3>
+                        <br><br><br><br><br><br><br>
+                    </div>
+                </div>
+
+     <div class="col-xs-6">
+         <div class="sidebar1">
+     
+ <form name="myForm" class="" action="Validacion.html" autocomplete="on" method="POST">
+ 
+ <b>Ingrese Nombre:<br></b>
+<input autofocus type="text" required name="nombree" value=""  maxlength="15"><br>
+ <b>Inserte Cedula:</b>
+ <br>
+ <input maxlength="11" minlength="11" type="text" name="cedula" value="" required>
+ <br><br><b>
+Direccion aqui:</b>
+<br>
+<textarea minlength="20" maxlength="75" name="" id=""  required></textarea>
+<br> <b>Sexo:</b>
+<br>
+ <select name="sexo" required>
+     <option value="">Seleccione Genero</option>
+    <option value="">Hombre</option>
+     <option value="">Mujer</option>
+     <option value="">Personalizado</option>
+                                       
+     </select><br>
+
+    <br><br> <label for="Nacimiento"><b>Lugar de Nacimiento</b></label><br>
+  <select name="Ciudad" required>
+      <option value="">Elija una Opcion</option>
+                                        <option value="">Sto Dgo</option>
+                                        <option value="">Bani</option>
+                                        <option value="">Varahona</option>
+                                        <option value="">Romana</option>
+                                        <option value="">Santiago</option>
+                                      </select><br><br>
+                       
+
+                                      
+                
+            </div>
+            
+            </div>
+    </div>
+<br>
+
+    <div class="row center-xs">
+            <div class="col-xs-2">
+        <input class="Enviar" type="submit" value="ENVIAR" onclick="validateForm()"> 
+            </div>
+            <div class="col-xs-2">
+                    <input class="Reset" type="reset" value="RESET" > 
+                        </div>
+                        <div class="col-xs-2">
+                         <input class="Cancelar" type="button" value="CANCELAR" >
+                         </div>
+                        
+        </div>
+
+
+   
+</form>
+
+    <br>
+    <footer class="row center-xs">
+        <div class="col-xs-8">
+            <div class="pie">
+                <h4> (Ronald Peña Nuñez) 2019-11-25, Diseño Web (MescysT)</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+
